@@ -1,0 +1,5 @@
+##Bajar secuencias para encontrar "TGCA"
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=6091398,6091397,6091396,6091395,6091394" > Rotisec.fasta
+
+##Buscar "TGCA"
+grep -c "TGCA"  Rotisec.fasta
